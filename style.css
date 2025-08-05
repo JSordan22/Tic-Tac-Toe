@@ -20,6 +20,21 @@ html {
 }
 
 body {
-    
+    font-family: 'Single Day', sans-serif;
+    background-color: var(--bkg-color);
+    color: var(--txt-color);
+}
+
+header {
+    background-color: var(--header-color);
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 12rem;
+    font-weight: 400;
 }
 
