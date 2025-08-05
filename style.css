@@ -80,3 +80,24 @@ header h1 {
 .scoreboard #player-X h2 {
     text-align: right;
 }
+
+/* board */
+#board table {
+    border-collapse: collapse;
+}
+#board table td {
+    width: 17rem;
+    height: 15rem;
+    font-size: 12.8rem;
+    text-align: center;
+    user-select: none;
+}
+
+#board table .row2 {
+    border-top: 1rem solid var(--txt-color);
+    border-bottom: 1rem solid var(--txt-color);
+}
+
+#board table td + td{ 
+    border-left:1rem solid var(--txt-color);
+}
