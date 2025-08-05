@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Link Tags -->
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <!-- Document Tags -->
+     <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <header>
+        <h1>Tic, Tac, Toe!</h1>
+    </header>
+    <main>
+        <section class="scoreboard">
+            <div id="player-O" class="player">
+                <!-- <img src="images/" alt="image of an 'O'"> -->
+                <h2 id="name-O" class="name"></h2>
+                <p id="score-O" class="score"></p>
+            </div>
+            <div id="player-X" class="player">
+                <!-- <img src="images/" alt="image of an 'X'"> -->
+                <h2 id="name-X" class="name"></h2>
+                <p id="score-X" class="score"></p>
+            </div>
+        </section>
+        <div id="board">
+            <table border="1">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <section class="button-group">
+            <button type="button" id="restart-game-btn" class="btn">restart game</button>
+            <button type="button" id="new-game-btn" class="btn">new game</button>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © The Odin Project | Jordan Stewart 2025</p>
+    </footer>
+</body>
+</html>
