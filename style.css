@@ -23,8 +23,16 @@ body {
     font-family: 'Single Day', sans-serif;
     background-color: var(--bkg-color);
     color: var(--txt-color);
+    height: 100dvh;
 }
 
+body > * {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* header */
 header {
     background-color: var(--header-color);
     height: 25rem;
@@ -34,7 +42,41 @@ header {
 }
 
 header h1 {
-    font-size: 12rem;
+    font-size: 12.8rem;
     font-weight: 400;
 }
 
+/* scoreboard */
+.scoreboard {
+    width: 120rem;
+    margin-top: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scoreboard .player-info {
+    border: 0.2rem var(--color-O) solid;
+    border-radius: 2rem;
+    padding: 1rem 3rem 1rem 1rem;
+    width: 33rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scoreboard #player-X .player-info {
+    border-color: var(--color-X);
+    padding: 1rem 1rem 1rem 3rem;
+    flex-direction: row-reverse;
+}
+
+.scoreboard .player h2,
+.scoreboard .player p {
+    text-align: left;
+    font-size: 4.8rem;
+    font-weight: 300;
+}
+
+.scoreboard #player-X h2 {
+    text-align: right;
+}
