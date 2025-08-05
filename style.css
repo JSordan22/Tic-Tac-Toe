@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Single+Day&display=swap');
+
+:root {
+    --txt-color: #B0B0B0;
+    --color-O: #00BCD4;
+    --color-X: #FF5733;
+    --bkg-color: #333840;
+    --header-color: #252930;
+    --btn-bkg-color: #252930; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    
+}
+
