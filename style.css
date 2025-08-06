@@ -143,11 +143,15 @@ footer {
     justify-content: end;
 }
 
-footer strong {
+footer a,
+footer a:visited,
+footer a:hover,
+footer a:active {
     all: unset;
+    cursor: pointer;
 }
 
-footer strong:hover {
+footer a:hover {
   background-image: linear-gradient(to right, #FF5733, #00BCD4);
   background-clip: text;
   -webkit-text-fill-color: transparent;
