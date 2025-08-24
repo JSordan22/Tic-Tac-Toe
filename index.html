@@ -9,6 +9,7 @@
 
     <!-- Link Tags -->
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/Player-x.svg">
     <script defer src="script.js"></script>
 
     <!-- Document Tags -->
@@ -23,14 +24,14 @@
             <div id="player-O" class="player">
                 <h2 id="name-O" class="name">Player O</h2>
                 <div class="player-info">
-                    <img src="images/Player-O.svg" alt="image of an 'O'">
+                    <img src="images/Player-o.svg" alt="image of an 'O'">
                     <p id="score-O" class="score">-</p>
                 </div>
             </div>
             <div id="player-X" class="player">
                 <h2 id="name-X" class="name">Player X</h2>
                 <div class="player-info">
-                    <img src="images/Player-X.svg" alt="image of an 'X'">
+                    <img src="images/Player-x.svg" alt="image of an 'X'">
                     <p id="score-X" class="score">-</p>
                 </div>
             </div>
@@ -39,12 +40,12 @@
             <table>
                 <tr class="row1">
                     <td></td>
-                    <td><img src="images/Player-O.svg" alt="image of an 'O'"></td>
+                    <td></td>
                     <td></td>
                 </tr>
                 <tr class="row2">
                     <td></td>
-                    <td><img src="images/Player-X.svg" alt="image of an 'X'"></td>
+                    <td></td>
                     <td></td>
                 </tr>
                 <tr class="row3">
@@ -62,5 +63,32 @@
     <footer>
         <p>Copyright © The Odin Project | <a href="https://github.com/JSordan22/Tic-Tac-Toe">Jordan Stewart</a> 2025</p>
     </footer>
+    <div class="dialogs">
+        <dialog id="result-dialog">
+            <div class="display-container">
+                <h2>WINNER IS...</h2>
+                <img src="" alt="" id="winner-image">
+                <p id="tie-text">NO ONE</p>
+                <button type="button" id="next-round-btn">next round?</button>
+                
+            </div>
+        </dialog>
+        <dialog id="new-game-dialog">
+            <div class="display-container">
+                <h2>new game</h2>
+                <div class="content-container">
+                    <div class="player-x-input player-input">
+                        <img src="images/Player-x.svg" alt="image of an 'X'">
+                        <input type="text" name="playerNameX" id="playerNameX" placeholder="Player-1 Name">
+                    </div>
+                    <div class="player-o-input player-input">
+                        <img src="images/Player-o.svg" alt="image of an 'O'">
+                        <input type="text" name="playerNameO" id="playerNameO" placeholder="Player-2 Name">
+                    </div>
+                    <button type="button" id="start-game-btn">start game</button>
+                </div>
+            </div>
+        </dialog>
+    </div>
 </body>
 </html>
